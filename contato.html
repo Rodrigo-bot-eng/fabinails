@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contato - Fabinails</title>
+  <link rel="stylesheet" href="contado.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="contact-box">
+      <h1>Entre em Contato 💬</h1>
+      <p>Preencha os dados abaixo para falar conosco via WhatsApp.</p>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="nome">Seu Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Ex: Maria da Silva" required />
+        </div>
+        <div class="form-group">
+          <label for="telefone">Seu Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(62) 99999-0000" required />
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Ex: Gostaria de agendar um horário..." rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-whats">Enviar via WhatsApp</button>
+        <p id="feedback" class="feedback"></p>
+      </form>
+    </section>
+  </main>
+  <script src="contato.js"></script>
+</body>
+</html>

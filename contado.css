@@ -1,0 +1,118 @@
+/* contato.css - Página de contato Fabinails com fundo elegante e transparência */
+:root {
+  --rosa: #ff8fb2;
+  --rosa-claro: #ffeaf1;
+  --dourado: #ffd87e;
+  --texto: #333;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--texto);
+  background: url('contato.jpg') no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: brightness(1.1);
+}
+
+.container {
+  max-width: 520px;
+  margin: 80px auto;
+  background: rgba(255, 255, 255, 0.72); /* Transparente e suave */
+  padding: 2.2rem;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(255, 143, 178, 0.3);
+  animation: fadeIn 0.8s ease-in-out;
+  backdrop-filter: blur(6px); /* efeito vidro */
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.contact-box h1 {
+  text-align: center;
+  color: var(--rosa);
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.contact-box p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #f0d3e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: #fffdfd;
+  transition: 0.3s ease;
+  color: #333;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--rosa);
+  box-shadow: 0 0 8px rgba(255, 143, 178, 0.3);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.btn-whats {
+  background-color: var(--rosa);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-whats:hover {
+  background-color: #ff6ea2;
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(255, 143, 178, 0.4);
+}
+
+.feedback {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+  color: #27ae60;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 30px 20px;
+    padding: 1.5rem;
+  }
+
+  .contact-box h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

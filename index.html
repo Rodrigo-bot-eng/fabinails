@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fabinails - Unhas de Gel Perfeitas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Menu principal">
+   <div class="logo-circle">
+  <img src="logo.jpg" alt="Logo FabiNails" class="logo-img" />
+</div>
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-btn__burger"></span>
+      </button>
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="#home" class="active" tabindex="0">Home</a></li>
+        <li><a href="#servicos" tabindex="0">Meu Trabalho</a></li>
+        <li><a href="#sobre" tabindex="0">Sobre Mim</a></li>
+        <li><a href="#depoimentos" tabindex="0">Depoimentos</a></li>
+        <li><a href="#faq" tabindex="0">FAQ</a></li>
+        <li><a href="contato.html" tabindex="0">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER PRINCIPAL -->
+  <section class="banner" id="home" aria-label="Banner principal">
+    <canvas id="glitter-canvas" aria-hidden="true"></canvas>
+    <div class="banner-text" role="region" aria-labelledby="banner-title">
+      <h1 id="banner-title">Unhas de Gel Perfeitas &brilhantes</h1>
+      <p>Experimente a beleza e a sofisticação que só o gel pode proporcionar. Designs exclusivos e cuidados especiais para você.</p>
+      <button class="btn-primary btn-glitter" id="cta-button" aria-haspopup="dialog" aria-controls="agendamento-modal" aria-expanded="false">Agende seu Horário</button>
+    </div>
+    <div class="banner-slider" aria-live="polite" aria-atomic="true" aria-relevant="additions removals">
+      <div class="slide active" style="background-image: url('1linha.webp');" aria-label="Unhas de gel estilo francesinha"></div>
+      <div class="slide" style="background-image: url('2linha.webp');" aria-label="Unhas com nail art personalizada"></div>
+      <div class="slide" style="background-image: url('3linha.webp');" aria-label="Unhas alongadas com gel"></div>
+      <button class="slider-btn prev-btn" aria-label="Slide anterior" tabindex="0">&#10094;</button>
+      <button class="slider-btn next-btn" aria-label="Próximo slide" tabindex="0">&#10095;</button>
+      <div class="slider-indicators" role="tablist" aria-label="Indicadores de slide">
+        <button class="indicator-dot active" role="tab" aria-selected="true" aria-controls="slide-1" tabindex="0"></button>
+        <button class="indicator-dot" role="tab" aria-selected="false" aria-controls="slide-2" tabindex="-1"></button>
+        <button class="indicator-dot" role="tab" aria-selected="false" aria-controls="slide-3" tabindex="-1"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRODUÇÃO -->
+  <section class="introducao" id="sobre" aria-label="Sobre Fabinails">
+    <h2>Quem Sou</h2>
+    <p>
+      Olá! Sou a Fabiana, apaixonada por unhas de gel. Minha missão é trazer elegância e cuidado para suas mãos com técnicas modernas e produtos de alta qualidade. Cada cliente é única e merece um atendimento personalizado, focado na saúde e beleza das unhas.
+    </p>
+    <p>
+      Localizada em Trindade - GO, atendo com higiene rigorosa, conforto e muito amor em cada detalhe. Venha transformar suas unhas em verdadeiras obras de arte!
+    </p>
+    <img src="fundo.jpg" alt="Foto de Fabiana, especialista em unhas de gel" style="width:100%; max-width:400px; border-radius: 20px; margin-top: 1rem; box-shadow: 0 6px 15px rgba(177, 109, 86, 0.3);" />
+  </section>
+
+  <!-- NOSSO TRABALHO (GALERIA SIMPLES) -->
+  <section class="features" id="servicos" aria-label="Galeria de Serviços e Trabalhos">
+    <article class="feature" tabindex="0" aria-describedby="desc-alongamento">
+      <img src="alongamento.jpg" alt="Alongamento de gel" />
+      <h3>Alongamento de Gel</h3>
+      <p id="desc-alongamento">Unhas mais longas e naturais, com acabamento impecável e durabilidade.</p>
+    </article>
+    <article class="feature" tabindex="0" aria-describedby="desc-blindagem">
+      <img src="blindagem.jpg" alt="Blindagem de unhas" />
+      <h3>Blindagem</h3>
+      <p id="desc-blindagem">Proteção extra para suas unhas com gel resistente e acabamento brilhante.</p>
+    </article>
+    <article class="feature" tabindex="0" aria-describedby="desc-encapsuladas">
+      <img src="encapsuladas.jpg" alt="Unhas encapsuladas" />
+      <h3>Encapsuladas</h3>
+      <p id="desc-encapsuladas">Designs com efeitos especiais e aplicação de brilho e flores encapsuladas.</p>
+    </article>
+    <article class="feature" tabindex="0" aria-describedby="desc-francesinha">
+      <img src="francesinha.jpg" alt="Francesinha" />
+      <h3>Francesinha</h3>
+      <p id="desc-francesinha">Clássico e elegante, com acabamento branco na ponta das unhas.</p>
+    </article>
+    <article class="feature" tabindex="0" aria-describedby="desc-nailart">
+      <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=80&q=80" alt="Nail Art personalizada" />
+      <h3>Nail Art Personalizada</h3>
+      <p id="desc-nailart">Desenhos exclusivos para destacar sua personalidade e estilo.</p>
+    </article>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" aria-label="Depoimentos de Clientes" style="max-width: 900px; margin: 4rem auto; padding: 0 2rem;">
+    <h2 style="color: #a55a3a; margin-bottom: 2rem; text-align: center;">O Que Dizem Nossas Clientes</h2>
+    <div style="display: flex; gap: 1rem; overflow-x: auto; scroll-behavior: smooth; padding-bottom: 1rem;">
+      <blockquote style="flex: 0 0 280px; background: #fff7f2; border-radius: 15px; box-shadow: 0 5px 15px rgba(177,109,86,0.2); padding: 1.5rem; user-select:none;">
+        <p>“A Fabiana é incrível! Minhas unhas nunca estiveram tão bonitas e duradouras.”</p>
+        <footer style="font-weight: 700; color: #814c3e; margin-top: 1rem;">- Juliana M.</footer>
+      </blockquote>
+      <blockquote style="flex: 0 0 280px; background: #fff7f2; border-radius: 15px; box-shadow: 0 5px 15px rgba(177,109,86,0.2); padding: 1.5rem; user-select:none;">
+        <p>“Atendimento impecável e resultados perfeitos. Super recomendo!”</p>
+        <footer style="font-weight: 700; color: #814c3e; margin-top: 1rem;">- Carla S.</footer>
+      </blockquote>
+      <blockquote style="flex: 0 0 280px; background: #fff7f2; border-radius: 15px; box-shadow: 0 5px 15px rgba(177,109,86,0.2); padding: 1.5rem; user-select:none;">
+        <p>“Simplesmente apaixonada pelas minhas unhas! Obrigada, Fabiana!”</p>
+        <footer style="font-weight: 700; color: #814c3e; margin-top: 1rem;">- Ana P.</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" aria-label="Perguntas Frequentes" style="max-width: 900px; margin: 4rem auto; padding: 0 2rem;">
+    <h2 style="color: #a55a3a; margin-bottom: 2rem; text-align: center;">Perguntas Frequentes</h2>
+    <dl>
+      <dt tabindex="0" style="font-weight: 700; margin-bottom: 0.4rem; cursor: pointer; color:#b16d56;">Quanto tempo dura o gel nas unhas?</dt>
+      <dd style="margin-bottom: 1rem; color: #4b3a42;">O gel pode durar entre 3 a 4 semanas dependendo do cuidado e crescimento natural da unha.</dd>
+
+      <dt tabindex="0" style="font-weight: 700; margin-bottom: 0.4rem; cursor: pointer; color:#b16d56;">É doloroso remover o gel?</dt>
+      <dd style="margin-bottom: 1rem; color: #4b3a42;">A remoção é feita com técnicas específicas que evitam danos e desconforto, sempre com muito cuidado.</dd>
+
+      <dt tabindex="0" style="font-weight: 700; margin-bottom: 0.4rem; cursor: pointer; color:#b16d56;">Posso escolher qualquer cor ou design?</dt>
+      <dd style="margin-bottom: 1rem; color: #4b3a42;">Sim! Trabalhamos com uma vasta gama de cores e personalizamos nail art conforme sua preferência.</dd>
+
+      <dt tabindex="0" style="font-weight: 700; margin-bottom: 0.4rem; cursor: pointer; color:#b16d56;">Como agendo meu horário?</dt>
+      <dd style="margin-bottom: 1rem; color: #4b3a42;">Você pode agendar diretamente pelo site, clicando no botão “Agende seu Horário”, ou pelo WhatsApp: <a href="https://wa.me/5562994639038" target="_blank" rel="noopener noreferrer">62 99463-9038</a>.</dd>
+    </dl>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="call-to-action" aria-label="Agende seu horário">
+    <h2>Pronta para unhas incríveis?</h2>
+    <button class="btn-primary btn-glitter" id="cta-button-2" aria-haspopup="dialog" aria-controls="agendamento-modal" aria-expanded="false">Agende Agora Mesmo</button>
+  </section>
+
+  <!-- MODAL AGENDAMENTO -->
+  <dialog id="agendamento-modal" aria-modal="true" aria-labelledby="modal-title" role="dialog">
+    <h3 id="modal-title">Agendamento de Horário</h3>
+    <form id="agendamento-form" novalidate>
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required aria-required="true" autocomplete="name" placeholder="Seu nome completo" />
+
+      <label for="telefone">Telefone (WhatsApp):</label>
+      <input type="tel" id="telefone" name="telefone" required aria-required="true" autocomplete="tel" placeholder="(62) 99999-9999" pattern="^\(?\d{2}\)?[\s-]?\d{4,5}-?\d{4}$" />
+
+      <label for="data">Data Desejada:</label>
+      <input type="date" id="data" name="data" required aria-required="true" />
+
+      <label for="servico">Serviço:</label>
+      <select id="servico" name="servico" required aria-required="true">
+        <option value="" disabled selected>Selecione um serviço</option>
+        <option value="alongamento">Alongamento de Gel</option>
+        <option value="blindagem">Blindagem</option>
+        <option value="encapsuladas">Encapsuladas</option>
+        <option value="francesinha">Francesinha</option>
+        <option value="nailart">Nail Art Personalizada</option>
+      </select>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn-primary btn-glitter">Enviar</button>
+        <button type="button" id="btn-close-modal">Cancelar</button>
+      </div>
+      <p id="form-message" role="alert" aria-live="assertive"></p>
+    </form>
+  </dialog>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Fabinails - Unhas de Gel. Desenvolvido com ❤️ por você.</p>
+    <p>Contato via WhatsApp: <a href="https://wa.me/5562994639038" target="_blank" rel="noopener noreferrer">62 99463-9038</a></p>
+  </footer>
+
+  <!-- SCRIPTS NO FINAL -->
+  <script src="script.js" defer></script>
+</body>
+</html>
